@@ -1,0 +1,87 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    background-color: #f0f0f0;
+    
+}
+body {
+    overflow-y: hidden;
+  }
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin-right: 1000px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.toolbar button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: normal;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.table input[type="checkbox"] {
+    margin: 0;
+}
+
+.edit-cell input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .toolbar {
+        flex-wrap: wrap;
+    }
+    
+    .toolbar button {
+        margin-bottom: 5px;
+    }
+    
+    .table th, .table td {
+        padding: 5px;
+    }
+}
